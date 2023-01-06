@@ -1,0 +1,66 @@
+:root{
+    --cardWidth: 12.5rem;
+    --cardHeight: 15.1rem;
+    --cardMargin: 0.62rem;
+}
+.category{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    width: 100%;
+}
+.text-category{
+    display: flex;
+    flex-direction: row;
+    height: 2.37rem;
+    justify-content: space-between;
+    width: 85%;
+}
+.text-category h2{
+    font-size: 32px;
+}
+.text-category a{  
+    height: 16px;
+    padding-right: 3.75rem;
+    color: rgb(0, 81, 255);
+    font-size: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.category ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    width: 85%;
+}
+.category li{
+    height: var(--cardHeight);
+    margin: var(--cardMargin);
+    width: var(--cardWidth);
+}
+.category img{
+    display: flex;
+    height: 10.8rem;
+    width: 11rem;
+}
+.category h3{
+    color: #464646;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+.category p{
+    color: #464646;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.category li > a{
+    color: rgb(0, 81, 255);
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}

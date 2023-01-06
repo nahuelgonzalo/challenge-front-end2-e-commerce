@@ -7,159 +7,171 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/estilos.css">
+	<link rel="stylesheet" type="text/css" href="styles/productos.css">
 </head>
 <body>
 	<header>
-		<img src="images/Logo.png" alt="Logo">
-		<input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
-		<button>Login</button>
+		<div class="header-container">
+			<img class="header-logo" src="images/Logo.png" alt="Logo" >
+			<div class="search">
+				<input type="search" class="input-search" id="inputSearch" placeholder="¿Qué deseas buscar?">
+				<button class="button-search"><img src="images/Lupa.png" alt="lupa"></button>
+			</div>
+			<a href="login.html"><button class="login">Login</button></a>
+			<button class="button-search-login"><img src="/images/LupaNegro.png" alt="LupaNegro"></button>
+		</div>
 	</header>
-	<section class="banner">
-		<img src="images/banner-image.png" alt="banner">
-		<H2>Febrero Promocional</H2>
-		<p>Productos seleccionados con 33% de descuento</p>
-		<button>Ver Consolas</button>
-	</section>
-	
 	<main>
-		<section class="gallery">
-			<div class="gallery-star wars">
-				<h2>Star Wars</h2>
-				<button>Ver todo →</button>
-				<ul>
-					<li>
-						<img src="images/Gallery/Star Wars/uno.png" alt="">
-						<p>Producto XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Star Wars/dos.png" alt="">
-						<p>Producto XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Star Wars/tres.png" alt="">
-						<p>Producto XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Star Wars/cuatro.png" alt="">
-						<p>Producto XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Star Wars/cinco.png" alt="">
-						<p>Producto XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Star Wars/seis.png" alt="">
-						<p>Producto XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-				</ul>
-				
+		<section class="content-container">
+			<div class="banner">
+				<div class="text">
+					<H1>Febrero Promocional</H1>
+					<p>Productos seleccionados con 33% de descuento</p>
+					<a href="#console"><button class="console-button">Ver Consolas</button></a>
+				</div>
 			</div>
-			<div class="gallery-console">
-				<h2>Consolas</h2>
-				<button>Ver todo →</button>
-				<ul>
+			<section class="gallery">
+				<div class="category" id="starWars">
+					<div class="text-category">
+						<h2>Star Wars</h2>
+						<a href="">Ver todo →</a>
+					</div>
+					<ul>
+						<li>
+							<img src="images/Gallery/Star Wars/uno.png" alt="">
+							<h3>Producto XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Star Wars/dos.png" alt="">
+							<h3>Producto XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Star Wars/tres.png" alt="">
+							<h3>Producto XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Star Wars/cuatro.png" alt="">
+							<h3>Producto XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Star Wars/cinco.png" alt="">
+							<h3>Producto XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Star Wars/seis.png" alt="">
+							<h3>Producto XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+					</ul>
 					
-					<li>
-						<img src="images/Gallery/Consolas/uno.png" alt="">
-						<p>Consola XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Consolas/dos.png" alt="">
-						<p>Control y Consola XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Consolas/tres.png" alt="">
-						<p>Consola XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Consolas/cuatro.png" alt="">
-						<p>Control XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Consolas/cinco.png" alt="">
-						<p>Consola XYZ</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Consolas/seis.png" alt="">
-						<p>Game Boy Color</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-				</ul>
-			</div>
-			<div class="gallery-various">
-				<h2>Diversos</h2>
-				<button>Ver todo →</button>
-				<ul>
-					
-					<li>
-						<img src="images/Gallery/Varios/uno.png" alt="">
-						<p>Camisa Atari</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Varios/dos.png" alt="">
-						<p>Camisa SNES</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Varios/tres.png" alt="">
-						<p>Sonic</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Varios/cuatro.png" alt="">
-						<p>Radio</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Varios/cinco.png" alt="">
-						<p>VR</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-					<li>
-						<img src="images/Gallery/Varios/seis.png" alt="">
-						<p>Pikachu</p>
-						<p>$60</p>
-						<button>Ver Producto</button>
-					</li>
-				</ul>
-			</div>
-
-
+				</div>
+				<div class="category" id="console">
+					<div class="text-category">
+						<h2>Consolas</h2>
+						<a href="">Ver todo →</a>
+					</div>
+					<ul>
+						
+						<li>
+							<img src="images/Gallery/Consolas/uno.png" alt="">
+							<h3>Consola XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Consolas/dos.png" alt="">
+							<h3>Control y Consola XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Consolas/tres.png" alt="">
+							<h3>Consola XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Consolas/cuatro.png" alt="">
+							<h3>Control XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Consolas/cinco.png" alt="">
+							<h3>Consola XYZ</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Consolas/seis.png" alt="">
+							<h3>Game Boy Color</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+					</ul>
+				</div>
+				<div class="category" id="various">
+					<div class="text-category">
+						<h2>Diversos</h2>
+						<a href="">Ver todo →</a>
+					</div>
+					<ul>
+						
+						<li>
+							<img src="images/Gallery/Varios/uno.png" alt="">
+							<h3>Camisa Atari</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Varios/dos.png" alt="">
+							<h3>Camisa SNES</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Varios/tres.png" alt="">
+							<h3>Sonic</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Varios/cuatro.png" alt="">
+							<h3>Radio</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Varios/cinco.png" alt="">
+							<h3>VR</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+						<li>
+							<img src="images/Gallery/Varios/seis.png" alt="">
+							<h3>Pikachu</h3>
+							<p>$60</p>
+							<a>Ver Producto</a>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</section>
-		
 	</main>
 	
 	<footer>
-		<section>
+		<section class="contact">
 			<div class="logo-footer">
 				<img src="images/Logo.png" alt="logo">
 			</div>
@@ -190,7 +202,7 @@
 
 			</div>
 		</section>
-		<section>
+		<section class="developer">
 			<p>Desarrollado por © Nahuel Girón</p>
 		</section>
 	</footer>
